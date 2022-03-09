@@ -2,7 +2,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
 import java.io.*;
 
-public class Prog81Test {
+public class Prog91Test {
 
     @Test
     public void testHelloWorld()
@@ -17,7 +17,7 @@ public class Prog81Test {
         // action
         // in.inputln("2"); // 標準入力をテストする場合
         // Hello.main(new String[]{"1", "2", "3"}); // 実行時引数をテストする場合
-        Prog81.main(null);
+        Prog91.main(null);
 
         // assertion
         assertEquals("Hello world!\n", bos.toString());
