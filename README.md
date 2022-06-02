@@ -1,23 +1,23 @@
 # 課題 9-1: 継承
 
 ### 課題の説明
-Heroクラスを継承するInvisibleHeroクラスを作成する。InvisibleHeroは姿を消す、姿を表す能力を持つ。これを表現するために
+Heroクラスを継承するInvisibleHeroクラスを作成しなさい。なお、InvisibleHeroは姿を消す、姿を表す能力を持つので、これを表現するために
 以下のフィールドとメンバを追加しなさい。
 
-- 追加するフィールド
+- InvisibleHeroクラスに追加するフィールド
 
 | 変数名 | 型 | 初期値 |
 |-----|-----|-----|
 | isVisible | boolean | True |
 
-- 追加するメソッド
+- InvisibleHeroクラスに追加するメソッド
 
 | 変数名          | 引数のリスト | 戻り値 | 処理内容                           |
 |--------------|--------|-----|--------------------------------|
 | getInvisible | なし     | なし | isVisibleをFalseにし、「姿を消した！」と表示する |
 | getVisible   | なし     | なし | isVisibleをTrueにし、「姿を現した！」と表示する |
 
-### Prog91.java と Hero.java (提出不要)
+### Prog91クラス と Heroクラス (これらのコードは提出不要)
 ```java
 public class Prog91 {
 
