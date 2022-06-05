@@ -31,7 +31,7 @@ public class Prog91Test {
             assertEquals("工太は、逃げ出した！", prints[2]);
             assertEquals("最終HPは100でした", prints[3]);
         } catch (ArrayIndexOutOfBoundsException excpt) {
-            fail("Prog81.main()のprint出力に改行が4つ分ありません!");
+            fail("Prog91.main()のprint出力が4行ではありません!");
         }
         assertEquals(5,prints.length,"改行数が５つ以上あります!"); // このif文に到達した時点で prints.lengthは５以上になっている
     }
