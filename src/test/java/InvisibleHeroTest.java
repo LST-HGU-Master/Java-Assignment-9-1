@@ -46,8 +46,8 @@ public class InvisibleHeroTest {
         // undo the binding in System
         System.setOut(originalOut);
             
-        String[] prints = bos.toString().split("\r\n|\n", -1); // 値が空の部分も切り出す
         // assertion
+        String[] prints = bos.toString().split("\r\n|\n", -1); // 値が空の部分も切り出す
         assertFalse(h.isVisible,"getInvisible()を呼び出してもisVisibleがfalseになりません!");
         assertEquals("勇者工太は姿を消した！", prints[0].toString(),"getInvisible()を呼び出した場合のprint出力が実行例と異なります!");
         assertEquals(2,prints.length,"改行が２つ以上あります!");
@@ -67,9 +67,8 @@ public class InvisibleHeroTest {
         // undo the binding in System
         System.setOut(originalOut);
         
-        String[] prints = bos.toString().split("\r\n|\n", -1); // 値が空の部分も切り出す
-
         // assertion
+        String[] prints = bos.toString().split("\r\n|\n", -1); // 値が空の部分も切り出す
         assertTrue(h.isVisible,"getVisible()を呼び出してもisVisibleがtrueになりません!");
         assertEquals("勇者工太は姿を現した！", prints[0].toString(),"getVisible()を呼び出した場合のprint出力が実行例と異なります!");
         assertEquals(2,prints.length,"改行が２つ以上あります!");
