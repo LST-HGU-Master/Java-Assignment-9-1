@@ -32,28 +32,26 @@ public class InvisibleHeroTest {
         ByteArrayOutputStream bos = new ByteArrayOutputStream();
         System.setOut(new PrintStream(bos));
 
+        // action
+        InvisibleHero h = new InvisibleHero();
         try {
-            // action
-            InvisibleHero h = new InvisibleHero();
             // assertion
-            assertTrue(h.isVisible,"newで作られたばかりのInvisibleHeroインスタンスのisVisibleがfalseです!");
-
-            // action
-            h.getInvisible();
-            // undo the binding in System
-            System.setOut(originalOut);
-            
-            String[] prints = bos.toString().split("\r\n|\n", -1); // 値が空の部分も切り出す
-            // assertion
-            assertFalse(h.isVisible,"getInvisible()を呼び出してもisVisibleがfalseになりません!");
-            assertEquals("勇者工太は姿を消した！", prints[0].toString(),"getInvisible()を呼び出した場合のprint出力が実行例と異なります!");
-            assertEquals(2,prints.length,"改行が２つ以上あります!");
+            assertTrue(h.isVisible,"InvisibleHeroインスタンスのisVisibleの初期値ががfalseです!");
         } catch (AssertionError err) {
             System.setOut(originalOut);
             throw err;
         }
-
-    }
+        // action
+        h.getInvisible();
+        // undo the binding in System
+        System.setOut(originalOut);
+            
+        String[] prints = bos.toString().split("\r\n|\n", -1); // 値が空の部分も切り出す
+        // assertion
+        assertFalse(h.isVisible,"getInvisible()を呼び出してもisVisibleがfalseになりません!");
+        assertEquals("勇者工太は姿を消した！", prints[0].toString(),"getInvisible()を呼び出した場合のprint出力が実行例と異なります!");
+        assertEquals(2,prints.length,"改行が２つ以上あります!");
+     }
 
     @Test
     public void testGetVisible()
