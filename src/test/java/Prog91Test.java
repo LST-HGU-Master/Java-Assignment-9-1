@@ -20,7 +20,7 @@ public class Prog91Test {
         // in.inputln("2"); // 標準入力をテストする場合
         // Hello.main(new String[]{"1", "2", "3"}); // 実行時引数をテストする場合
         Prog91.main(null);
-        
+        // undo the binding in System
         System.setOut(originalOut);        
 
         // assertion
