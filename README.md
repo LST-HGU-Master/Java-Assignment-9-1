@@ -38,7 +38,7 @@ public class Hero
 
     public void run() //逃げる
     {
-        System.out.println(this.name + "は、逃げ出した!");
+        System.out.println(this.name + "は、逃げ出した！");
         System.out.println("最終HPは" + this.hp + "でした");
     }
 }
