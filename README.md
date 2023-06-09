@@ -8,14 +8,14 @@ Heroクラスを継承するInvisibleHeroクラスを作成しなさい。なお
 
 | 変数名 | 型 | 初期値 |
 |-----|-----|-----|
-| isVisible | boolean | True |
+| isVisible | boolean | true |
 
 - InvisibleHeroクラスに追加するメソッド
 
 | メソッド名          | 引数のリスト | 戻り値 | 処理内容                           |
 |--------------|--------|-----|--------------------------------|
-| getInvisible | なし     | なし | isVisibleをFalseにし、「姿を消した！」と表示する |
-| getVisible   | なし     | なし | isVisibleをTrueにし、「姿を現した！」と表示する |
+| getInvisible | なし     | なし | isVisibleをfalseにし、「姿を消した！」と表示する |
+| getVisible   | なし     | なし | isVisibleをtrueにし、「姿を現した！」と表示する |
 
 ### Prog91クラス と Heroクラス (これらのコードは提出不要)
 ```java
