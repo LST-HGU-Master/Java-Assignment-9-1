@@ -16,7 +16,7 @@ import java.io.*;
 public class InvisibleHeroTest {
 
     @Test
-    public void testExtendHero()
+    public void testInitialState()
     {
         // action
         InvisibleHero h = new InvisibleHero();
