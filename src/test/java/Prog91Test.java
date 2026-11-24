@@ -8,7 +8,7 @@ import java.io.*;
 public class Prog91Test {
 
     @Test
-    public void testHelloWorld()
+    public void testMain()
     {
         PrintStream originalOut = System.out;
         ByteArrayOutputStream bos = new ByteArrayOutputStream();
