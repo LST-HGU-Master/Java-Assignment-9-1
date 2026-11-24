@@ -29,23 +29,24 @@
 学籍番号（`studentID`）から末尾2桁の数字を取り出して計算を行うには、以下のコードを参考にしてください。
 ```
 // 例：studentID が "4724301" の場合
-// 1. substring(5) を使ってインデックス5以降（6・7文字目）を切り出す<br>
+
+// 1. substring(5) を使ってインデックス5以降（6・7文字目）を切り出す
 String lastTwo = this.studentID.substring(5); // "01" という文字列になる
 
-// 2. Integer.parseInt を使って文字列を int 型の数値に変換する<br>
+// 2. Integer.parseInt を使って文字列を int 型の数値に変換する
 int number = Integer.parseInt(lastTwo); // 1 という数値になる
 
-// 3. 5で割った余り（% 5）に 1 を足してレベルを計算する<br>
+// 3. 5で割った余り（% 5）に 1 を足してレベルを計算する
 int stealthLevel = (number % 5) + 1; // 1 % 5 + 1 => 2 となる
 ```
 
 ### Prog91クラス と Heroクラス (これらのコードは提出不要)
 動作確認や親クラスの参照用として以下のコードを使用しなさい。
 
-Prog91.java
+**Prog91.java**
 ```java
-public class Prog91 {
-
+public class Prog91
+{
     public static void main(String[] args){
         InvisibleHero sh = new InvisibleHero();
         sh.getInvisible(); //見えなくなる
@@ -55,7 +56,7 @@ public class Prog91 {
 
 }
 ```
-Hero.java
+**Hero.java**
 ```java
 public class Hero
 {
